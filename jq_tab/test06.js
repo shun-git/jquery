@@ -1,5 +1,5 @@
 (function($, window){
   $(function(){
-    $('.tab_default').tabslet();
+    $('.tabs_default').tabslet();
   });
-})(jQuery, window)
+})(jQuery, window);

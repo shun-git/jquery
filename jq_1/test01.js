@@ -32,7 +32,7 @@ var animals=['パンダ','ライオン','キリン'];
 var i=0;
 while (i<animals.length){
   if(animal=='ライオン') {
-    alert('ライオン');
+    alert(i);
   break;
   }
   alert(animals[i]);
@@ -56,9 +56,28 @@ switch(animal){
     alert('パンダの体重は300(Kg)です');
     break;
 }
+//問6直し
+var animal = prompt('動物は？');
+var animals=[
+  {'name':'パンダ','weight':80},
+  {'name':'ライオン','weight':200},
+  {'name':'キリン','weight':300}
+];
+animals.forEach(function(val){
+  if (val.name == animal) {
+    alert(val.weight); 
+  }
+});
+
 
 var number = prompt('円の半径は？');
 alert('円の半径は'+3.14*number*number+'です');
+//問7 直し
+function alert_circle_area(r){
+  alert('円の半径は'+3.14*r*r+'です')
+}
+var number = prompt('円の半径は？');
+alert_circle_area(number);
 
 /*
 comment
